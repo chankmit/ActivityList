@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Add Activity
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <form> 
+    <h5>&nbsp; &nbsp; Add Activity</h5>
+    <ion-list> 
+    <ion-item>    
+      <ion-input type="text" name="title" [(ngModel)]="title" placeholder="Title" required></ion-input>
+    </ion-item>
+    <ion-item>  
+      <ion-input type="text" name="description" [(ngModel)]="description" placeholder="Description"
+      required>
+      </ion-input>
+    </ion-item>
+    </ion-list>
+    <div class="row">
+      <div class="col col-50">
+        <button ion-button (click)="saveRecords()" block>Save</button>
+      </div>
+    </div>
+  </form>
+</ion-content>
